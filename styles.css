@@ -1,0 +1,707 @@
+
+/* styles.css */
+body {
+    font-family: 'Okta Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117;
+    overflow-x: hidden;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.content-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.hero-section {
+    background-color: #f1f1f1;
+    display: flex;
+    width: 100%;
+    padding-top: 75px;
+    flex-direction: column;
+    height: 1080px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    min-height: 946px;
+    width: 100%;
+    align-items: flex-start;
+    letter-spacing: -0.32px;
+    justify-content: center;
+    padding: 80px 60px;
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-background1 {
+    position: fixed;
+    top: 0;
+    left: 50%; /* Adjust this value to position the line as desired */
+    height: 100vh;
+    width: auto;
+    z-index: -6; /* Adjust z-index as needed */
+    pointer-events: none;
+    transform: translateX(-50%); /* Center the line horizontally */
+}
+
+.hero-text {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 967px;
+    flex-direction: column;
+    margin: 250px 0 54px 107px; /* Updated left margin to align with .feature-description */
+}
+
+
+.hero-title {
+    color: #000;
+    letter-spacing: -0.96px;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 104%;
+    margin: 0;
+}
+
+.hero-description {
+    color: #525252;
+    margin: 20px 60px 0 0;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.cta-container {
+    align-self: flex-start;
+    display: flex;
+    margin-top: 22px;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 220%;
+    justify-content: space-between;
+}
+
+.cta-icon {
+    z-index: -4;
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 10px;
+}
+
+.cta-buttons {
+    font-family: 'Okta Neue', sans-serif;
+    display: flex;
+    margin-top: 17px;
+    gap: 12px;
+}
+
+.cta-button {
+    border-radius: 12px;
+    box-shadow: 2px 8px 10.3px -4px #ffb394;
+    background-color: #fc773f;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 220%;
+    padding: 10px 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.features-section {
+    background-color: #f1f1f1;
+    display: flex;
+    margin-top: 32px;
+    width: 100%;
+    flex-direction: column;
+    padding: 32px 80px 80px;
+}
+
+.feature-header {
+    align-self: flex-start;
+    display: flex;
+    margin-left: 41px;
+    gap: 20px;
+    font-size: 24px;
+    color: #f1f1f1;
+    font-weight: 400;
+    white-space: nowrap;
+    letter-spacing: -0.24px;
+    line-height: 117%;
+    justify-content: space-between;
+}
+
+.feature-icon {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    align-self: flex-start;
+}
+
+.feature-title {
+    margin: 0;
+}
+
+.feature-description {
+    color: #000;
+    letter-spacing: -1.44px;
+    align-self: flex-start;
+    margin: 106px 0 0 107px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 52px;
+}
+
+.feature-showcase {
+    display: flex;
+    flex-direction: column;
+    box-shadow: -12px 34px 32.7px 13px #e3e3e3;
+    overflow: hidden;
+    position: relative;
+    min-height: 739px;
+    margin-top: 57px;
+    align-items: flex-end;
+    padding: 80px 60px 0;
+}
+
+.showcase-background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Container for the images */
+.feature-image {
+    position:absolute; /* Fixed positioning to keep the images in place */
+    top: 0; /* Start from the top of the viewport */
+    right: 0; /* Stick to the right edge of the viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the right end */
+    top: 2150px;
+}
+
+/* Adjust the images inside the container */
+.feature-image .info-image {
+    position: relative; /* To manage image positioning */
+}
+
+/* Styles for the first image */
+.feature-image img:nth-child(1) {
+    width: 600px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    z-index: 1;
+    /* Adjust as needed */
+}
+
+/* Styles for the second image */
+.feature-image img:nth-child(2) {
+    width: 500px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    z-index: 2;
+    left: 100px;
+    top: 220px; /* Adjust the vertical overlap */
+    right: 0; /* Align to the right edge of the container */
+    /* Adjust the horizontal overlap if needed */
+}
+
+
+.feature-details {
+    z-index: 10;
+    margin-left: 80px;
+    margin-top: 80px;
+    width: 100%;
+    max-width: 939px;
+    display: flex;
+    gap: 20px;
+}
+
+.feature-text {
+    width: 70%;
+}
+
+.feature-text p {
+    color: #000;
+    margin-top: 117px;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.feature-image {
+    width: 42%;
+}
+
+.detail-image {
+    aspect-ratio: 1.92;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    box-shadow: 9px 11px 29.5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.fact-section {
+    position: relative; /* Ensure the parent has relative positioning */
+    width: 100%;
+    max-width: 534px;
+    margin: 10px 0 0 50px;
+    display: flex;
+    margin-bottom: 350px;
+}
+
+.fact-icon {
+    aspect-ratio: 0.18;
+    object-fit: auto;
+    object-position: center;
+    width: 81px;
+    flex-grow: 1;
+}
+
+.fact-content {
+    position: absolute; /* Absolute positioning */
+    top: 100px; /* Adjust top position */
+    left: 100px; /* Adjust left position */
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    font-weight: 400;
+    margin: 0; /* Reset margins */
+}
+
+.fact-label {
+    margin-bottom: -20px;
+    border-radius: 24px;
+    background-color: #f1f1f1;
+    align-self: flex-start;
+    color: #808080;
+    padding: 0 8px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.fact-title {
+    color: #fc773f;
+    letter-spacing: -1.92px;
+    margin-top: 26px;
+    font-size: 64px;
+    line-height: 106%;
+}
+
+.fact-description {
+    color: #000;
+    margin-top: -60px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.access-title {
+    color: #000;
+    text-align: center;
+    letter-spacing: -0.96px;
+    align-self: center;
+    margin-top: 49px;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100%;
+}
+
+.access-description {
+    color: #525252;
+    text-align: center;
+    letter-spacing: -0.32px;
+    align-self: center;
+    margin-top: -62px;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.access-cta {
+    position: relative; /* Ensure positioning */
+    align-self: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1000; 
+}
+
+.access-cta, .access-title, .access-description {
+    pointer-events: auto; /* Ensure elements are interactive */
+}
+
+.access{
+    margin-top: 120px;
+}
+.bottom .books{
+    position: relative; /* Add positioning */
+    width: 100%;
+    margin-top: -300px;
+    z-index: 1;
+}
+
+@media (max-width: 1920px) {
+    .content-wrapper {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-section {
+        height: auto;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .hero-text {
+        margin: 40px 0;
+    }
+
+    .hero-title {
+        max-width: 100%;
+        font-size: 40px;
+    }
+
+    .hero-description {
+        max-width: 100%;
+        margin: 40px 10px 0 0;
+    }
+
+    .cta-container {
+        flex-wrap: wrap;
+    }
+
+    .cta-buttons {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .features-section {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .feature-header {
+        margin-left: 10px;
+        white-space: initial;
+    }
+
+    .feature-description {
+        max-width: 100%;
+        margin-top: 40px;
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .feature-showcase {
+        max-width: 100%;
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+    .showcase-image {
+        margin-top: 40px;
+    }
+
+    .feature-details {
+        flex-direction: column;
+    }
+
+    .feature-text,
+    .feature-image {
+        width: 100%;
+    }
+
+    .feature-text p {
+        max-width: 100%;
+        margin-top: 40px;
+  ;
+    }
+
+    .detail-image {
+        margin-top: 40px;
+    }
+
+    .fact-icon {
+        margin-top: 12px;
+    }
+
+    .fact-content {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+    .fact-title {
+        max-width: 100%;
+        margin-right: 10px;
+        font-size: 40px;
+    }
+
+    .fact-description {
+        max-width: 100%;
+    }
+
+    .access-title {
+        max-width: 100%;
+        font-size: 60px;
+    }
+
+    .access-description {
+        max-width: 100%;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .access-cta {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+        z-index: 1000;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-description {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .feature-description {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+
+    .fact-title {
+        font-size: 32px;
+    }
+
+    .fact-description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .access-title {
+        font-size: 48px;
+    }
+
+    .access-description {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 479px) {
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-description {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 14px 40px;
+    }
+
+    .feature-description {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .fact-title {
+        font-size: 28px;
+    }
+
+    .fact-description {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .access-title {
+        font-size: 40px;
+    }
+
+    .access-description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+.highlight {
+    color: #fc773f;
+    font-weight: 600;
+}
+
+:root {
+    --primary-color: #fc773f;
+    --secondary-color: #525252;
+    --background-color: #f1f1f1;
+    --text-color: #000;
+    --shadow-color: rgba(0, 0, 0, 0.25);
+}
+
+.main-container {
+    background-color: var(--background-color);
+}
+
+.hero-section,
+.features-section {
+    background-color: var(--background-color);
+}
+
+.hero-title,
+.feature-title,
+.access-title {
+    color: var(--text-color);
+}
+
+.hero-description,
+.feature-description,
+.fact-description,
+.access-description {
+    color: var(--secondary-color);
+}
+
+.cta-button {
+    color: white;
+}
+
+.showcase-image,
+.additional-showcase-image,
+.detail-image {
+    box-shadow: 9px 11px 29.5px 0px var(--shadow-color);
+}
+
+.feature-showcase {
+    box-shadow: -12px 34px 32.7px 13px var(--shadow-color);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-content,
+.feature-header,
+.feature-description,
+.feature-showcase,
+.feature-details,
+.fact-section,
+.access-title,
+.access-description,
+.access-cta {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.cta-button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #e56a36;
+    transform: translateY(-2px);
+}
+
+.cta-button:active {
+    transform: translateY(0);
+}
+
+.feature-image img,
+.showcase-image,
+.additional-showcase-image {
+    transition: transform 0.3s ease;
+}
+
+.feature-image img:hover,
+.showcase-image:hover,
+.additional-showcase-image:hover {
+    transform: scale(1.05);
+}
+
+
+@media only screen and (max-width: 400px) {
+
+
+
+}
+
+
+/* Loading Overlay Styles */
+.loading-overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Cover the whole viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it’s above other content */
+}
+
+.spinner {
+    border: 8px solid #f3f3f3; /* Light grey background */
+    border-top: 8px solid #e56a36; /* Blue foreground */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

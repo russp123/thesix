@@ -1,0 +1,415 @@
+body, html {
+    font-family: 'Okta Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #f1f1f1;
+}
+
+.container {
+    background-color: #f1f1f1;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 60px 0;
+    min-height: 100vh;
+    max-width: 1420px; /* Adjusted to match mainstyle.css */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 18px;
+    margin-bottom: 22px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 56px;
+    height: 56px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 4px 19px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: #8b8b8b;
+    width: 200px;
+}
+
+.search-box img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons a {
+    display: flex;
+    align-items: center;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.profile {
+    width: 71px;
+    height: 59px;
+    background-color: #e8e8e8;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.profile-icon {
+    width: 36px;
+    height: 36px;
+}
+
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+
+.left-column {
+    width: 100%;
+}
+
+.upload-form {
+    max-width: 1420px; /* Example width */
+    background-color: #fff;
+    border-radius: 18px;
+    padding: 32px 200px;
+    margin-bottom: 15px;
+}
+.form-title {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1px; /* Decrease margin to bring closer to the subtitle */
+}
+
+.form-subtitle {
+    font-size: 15px;
+    color: #fc773f;
+    text-align: center;
+    margin-top: 0; /* Remove margin-top to pull it up */
+    margin-bottom: 28px; /* Adjust as needed */
+}
+
+.upload-area {
+    border: 1px dashed #ccc;
+    border-radius: 12px;
+    padding: 29px 60px;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+#dropZone {
+    border: 2px dashed #ccc; /* Default border style */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff; /* Default background color */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+#dropZone.highlight {
+    background-color: #f0f8ff; /* Light blue or any color to indicate highlight */
+    border-color: #fc773f; /* Optional: Change border color as well */
+}
+
+
+.upload-button {
+    background-color: #fc773f;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 55px;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8.3px 0px #ffba9d;
+}
+.upload-text {
+    font-size: 13px;
+    color: #939393;
+    margin-top: 17px;
+}
+.file-types {
+    font-size: 11px;
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.agreement {
+    font-size: 11px;
+    color: #a7a7a7;
+    text-align: center;
+    margin-bottom: 72px;
+}
+.form-group {
+    margin-bottom: 19px;
+}
+
+.academic-year {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+.form-label {
+    display: block;
+    font-size: 12px;
+    color: #8b8b8b;
+    margin-bottom: 13px;
+}
+.form-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 12px;
+}
+textarea.form-input {
+    height: 206px;
+    resize: vertical;
+}
+.authors-input {
+    display: flex;
+    align-items: center;
+}
+.authors-input .form-input {
+    flex: 1;
+}
+.authors-hint {
+    font-size: 10px;
+    color: #d0d0d0;
+    font-style: italic;
+    margin-left: 7px;
+}
+.academic-year {
+    width: 119px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 12px;
+}
+.academic-year::-webkit-inner-spin-button,
+.academic-year::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 7px;
+    margin-top: 39px;
+}
+.cancel-button,
+.submit-button {
+    border-radius: 12px;
+    padding: 11px 23px;
+    font-size: 11px;
+    cursor: pointer;
+}
+.cancel-button {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8.3px 0px #ffebe2;
+}
+.submit-button {
+    background-color: #fc773f;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 4px 8.3px 0px #ffdfd1;
+}
+
+   .right-column {
+            width: 29%;
+        }
+        
+.trending {
+    background-color: #fff;
+    border-radius: 18px;
+    padding: 41px 28px;
+}
+.trending-title {
+    font-size: 19px;
+    font-weight: 900;
+    color: #000;
+    margin-bottom: 16px;
+}
+.trending-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.trending-number {
+    font-size: 12px;
+    color: #828282;
+}
+.trending-project-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+}
+.trending-views {
+    font-size: 14px;
+    color: #828282;
+    margin-top: 5px;
+}
+
+
+/* Container of the profile button */
+
+.modal2 {
+    display: none;
+    position:fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    /* Remove or make the background color transparent */
+    border: none; /* Explicitly setting border to none */
+}
+
+
+.profile-modal-content {
+    width: 270px;
+    height: 370px;
+    margin: auto;
+    margin-right: 310px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    border: none; /* Explicitly setting border to none */
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover; 
+}
+
+.profile-name {
+    font-weight: bold;
+
+}
+
+.profile-action {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.profile-divider {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+.close-profile-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-profile-button:hover,
+.close-profile-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive profile modal adjustments */
+
+@media screen and (max-width: 1366px) {
+    .profile-modal-content {
+        width: 20%; /* Adjust width for larger screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile-modal-content {
+        width: 25%; /* Reduce width on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-modal-content {
+        width: 20%; /* Further reduce width on very small screens */
+        padding: 15px; /* Reduce padding for small screens */
+    }
+}
+
+.file-preview {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #a3c8a8; /* Matte green background */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    color: #ffffff;
+
+    position: relative;
+    margin-bottom: 30px;
+    width: 520px; /* Fixed width */
+}
+.file-preview span {
+    margin-right: 10px;
+}
+.remove-file {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
